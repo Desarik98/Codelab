@@ -9,11 +9,11 @@ public class TaskDto {
     private String name;
     private String description;
     private TaskEnum status;
-    private User assignedTo;
+    private UserDto assignedTo;
     private Date dueDate;
     private Date created;
 
-    public TaskDto(String name, String description, TaskEnum status, User assignedTo, Date dueDate, Date created) {
+    public TaskDto(String name, String description, TaskEnum status, UserDto assignedTo, Date dueDate, Date created) {
         this.name = name;
         this.description = description;
         this.status = status;
@@ -46,11 +46,11 @@ public class TaskDto {
         this.status = status;
     }
 
-    public User getAssignedTo() {
+    public UserDto getAssignedTo() {
         return assignedTo;
     }
 
-    public void setAssignedTo(User assignedTo) {
+    public void setAssignedTo(UserDto assignedTo) {
         this.assignedTo = assignedTo;
     }
 

@@ -29,6 +29,14 @@ public class User {
         this.createdAt = userDto.getCreatedAt();
     }
 
+    public User(String id, String name, String lastName, String email, Date createdAt) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.createdAt = createdAt;
+    }
+
     public String getId() {
         return id;
     }

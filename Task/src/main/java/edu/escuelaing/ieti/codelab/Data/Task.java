@@ -20,7 +20,7 @@ public class Task {
         this.name = taskDto.getName();
         this.description = taskDto.getDescription();
         this.status = taskDto.getStatus();
-        this.assignedTo = taskDto.getAssignedTo();
+        this.assignedTo = new User(taskDto.getAssignedTo());
         this.dueDate = taskDto.getDueDate();
         this.created = taskDto.getCreated();
     }
@@ -30,7 +30,7 @@ public class Task {
         this.name = taskDto.getName();
         this.description = taskDto.getDescription();
         this.status = taskDto.getStatus();
-        this.assignedTo = taskDto.getAssignedTo();
+        this.assignedTo = new User(taskDto.getAssignedTo());
         this.dueDate = taskDto.getDueDate();
         this.created = taskDto.getCreated();
     }
